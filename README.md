@@ -2,8 +2,8 @@
 
 | | |
 |---|---|
-| ![](assets/ss1.png) | ![](assets/ss2.png) |
-| ![](assets/ss3.png) | ![](assets/ss4.png) |
+| ![](asset/ss1.png) | ![](asset/ss2.png) |
+| ![](asset/ss3.png) | ![](asset/ss4.png) |
 
 
 # 🦉 Dr. Owl: AI Medical RAG Assistant
