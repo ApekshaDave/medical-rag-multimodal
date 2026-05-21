@@ -1,3 +1,11 @@
+## 📸 Preview
+
+| | |
+|---|---|
+| ![](assets/Screenshot%20(204).png) | ![](assets/Screenshot%20(205).png) |
+| ![](assets/Screenshot%20(206).png) | ![](assets/Screenshot%20(207).png) |
+
+
 # 🦉 Dr. Owl: AI Medical RAG Assistant
 
 Dr. Owl is a production-grade **Retrieval-Augmented Generation (RAG)** system designed to bridge the gap between static medical datasets and real-time AI reasoning. By grounding a 70B parameter LLM in a verified medical database, Dr. Owl provides fast, accurate, and citable medical insights.
