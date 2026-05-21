@@ -55,7 +55,7 @@ The intelligence of Dr. Owl is anchored in a recognized clinical dataset:
 ## 💻 Local Setup
 1.  **Clone the Repo:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+    git clone https://github.com/ApekshaDave/Dr-Owl-Medical-RAG.git
     ```
 2.  **Backend Setup:**
     ```bash
