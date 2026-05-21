@@ -4,7 +4,6 @@ Dr. Owl is a production-grade **Retrieval-Augmented Generation (RAG)** system de
 
 ## 🚀 Live Demo
 * **Frontend (User Interface):** https://dr-owl-medical-rag.vercel.app/
-* **Backend (API Infrastructure):** https://pookiesdfsd-dr-owl-medical-rag.hf.space
 
 ---
 
@@ -16,6 +15,18 @@ Unlike standard chatbots that rely solely on internal training data, Dr. Owl use
 * **The Infrastructure:** * **Backend:** Containerized **FastAPI** (Python) server deployed via **Docker** on Hugging Face Spaces.
     * **Frontend:** Responsive **React.js** application hosted on **Vercel**.
 
+---
+## 🔄 How It Works
+
+```mermaid
+flowchart LR
+    A[👤 User Query\nReact Frontend] -->|HTTP POST| B[FastAPI Backend\nPython / Docker]
+    B -->|Encode text| C[Sentence Transformer\nall-MiniLM-L6-v2\n384-dim vectors]
+    C -->|Vector search| D[FAISS Index\n45K+ clinical records\nIO_FLAG_MMAP]
+    D -->|Top-K results| E[Distance Filter\nL2 threshold\nprune low-confidence]
+    E -->|Verified context| F[Llama 3.3 70B\nvia Groq LPU\n300+ tok/sec]
+    F -->|JSON response| G[React UI\nAnswer + Source\nCitations]
+```
 ---
 
 ## 📂 Dataset & Data Processing
